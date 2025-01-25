@@ -105,7 +105,7 @@ class PlanningController
                 // Tenter d'ajouter l'utilisateur
                 $this->userModel->create([
                     'username' => $username,
-                    'password' => $password, // Le hachage se fait dans la méthode create
+                    'password' => $password, 
                     'role' => $role,
                     'email' => $username . '@example.com', // Génération d'un e-mail par défaut
                 ]);
