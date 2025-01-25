@@ -1,0 +1,326 @@
+/* Variables pour les couleurs et styles */
+:root {
+    --shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+    --primary: #3b82f6;
+    --primary-light: #bfdbfe;
+    --danger: #ef4444;
+    --danger-light: #fee2e2;
+    --gray: #f3f4f6;
+    --dark-gray: #1f2937;
+    --text: #374151;
+    --text-light: #6b7280;
+    --green: #10b981;
+    --light-green: #d1fae5;
+}
+
+
+/* Global Styles */
+body {
+    background: var(--gray);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--dark-gray);
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.header-flex .card {
+    flex: 1;
+
+}
+
+.logout button {
+    background: var(--danger);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.logout button:hover {
+    background: var(--danger-light);
+    transform: scale(1.05);
+}
+
+/* Year Selector */
+.year-select {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.year-select select {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid var(--text-light);
+    border-radius: var(--border-radius);
+    background: white;
+    color: var(--text);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.year-select select:hover {
+    border-color: var(--primary);
+    transform: scale(1.02);
+}
+
+/* Welcome Message */
+.welcome-message {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Cards Styling */
+.card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Success and Error Messages */
+.success-message {
+    background: var(--light-green);
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.error-message {
+    background: var(--danger-light);
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Delete Button */
+.delete-button {
+    background: var(--danger);
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-button:hover {
+    background: var(--danger-light);
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: var(--gray);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stats */
+.stats h2,
+.add-person h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+.stats ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stats li {
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--primary-light);
+    border-radius: 8px;
+    color: var(--text);
+}
+
+/* Add Person Form */
+.add-person .form-group {
+    margin-bottom: 1rem;
+}
+
+.add-person .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.add-person .form-group input {
+    width: 70%;
+    padding: 0.8rem;
+    border: 2px solid var(--text-light);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.add-person .form-group input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.add-person button {
+    width: 6 0%;
+    padding: 0.9rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-person button:hover {
+    background: var(--primary-light);
+    transform: translateY(-3px);
+}
+
+/* Table Styling */
+.tables-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.table-container {
+    flex: 1 1 calc(25% - 1rem);
+    min-width: 280px;
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+td {
+    padding: 0.8rem;
+    border: 1px solid var(--gray);
+    text-align: center;
+}
+
+td select {
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid var(--text-light);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    background-color: white;
+}
+
+td select:hover {
+    border-color: var(--primary);
+    transform: scale(1.02);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

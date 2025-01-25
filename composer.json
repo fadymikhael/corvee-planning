@@ -1,0 +1,10 @@
+{
+    "name": "fadymax/corvee-project",
+    "description": "A calendar application for managing weekly potato peeling tasks with MongoDB and PHP.",
+    "type": "project",
+    "require": {
+        "mongodb/mongodb": "^1.20",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "minimum-stability": "stable"
+}

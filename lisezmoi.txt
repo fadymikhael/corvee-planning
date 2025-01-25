@@ -1,0 +1,47 @@
+========================================
+Projet : Gestion des corvées
+========================================
+
+Auteur :Fady Mikhael
+Date : 25/01/2025
+URL : https://projet-web-training.ovh/licence18/corvee-project/
+
+========================================
+1. Fonctionnalités demandées et développées
+========================================
+- Gestion d'un calendrier annuel des corvées hebdomadaires avec 52 semaines (finalisé).
+- Sélection de l'année pour afficher le calendrier correspondant (finalisé).
+- Stockage des données dans une base de données MongoDB (fiable).
+- Structure JSON des collections MongoDB définie et utilisée (finalisé).
+- Calcul des statistiques annuelles (nombre de semaines par participant) directement avec MongoDB (fiable).
+- Accès à l'agenda conditionné par une connexion utilisateur (fiable).
+
+========================================
+2. Fonctionnalités demandées mais non développées
+========================================
+- Aucune fonctionnalité critique du sujet n’a été omise.
+
+========================================
+3. Fonctionnalités personnelles ajoutées
+========================================
+- Ajout d'un utilisateur par un administrateur (finalisé).
+- Suppression d'un utilisateur par un administrateur avec réinitialisation des tâches associées (finalisé).
+- Création automatique de mots de passe hachés pour renforcer la sécurité (finalisé).
+- Génération de couleurs dynamiques pour identifier les responsables (finalisé).
+- Design amélioré avec une interface utilisateur moderne et responsive (finalisé).
+- Validation renforcée des mots de passe (finalisé).
+
+========================================
+4. Niveau de finalisation des fonctionnalités
+========================================
+- Calendrier annuel des corvées : finalisé / fiable.
+- Sélection de l'année : finalisé / fiable.
+- Gestion des données avec MongoDB : finalisé / fiable.
+- Calcul des statistiques : finalisé / fiable.
+- Connexion utilisateur : finalisé / fiable.
+- Ajout d'utilisateur : finalisé / fiable.
+- Suppression d'utilisateur : finalisé / fiable.
+- Création de mots de passe hachés : finalisé.
+- Génération de couleurs dynamiques : finalisé / fiable.
+- Design responsive : finalisé.
+- Validation des mots de passe : finalisé.

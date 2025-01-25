@@ -1,0 +1,7 @@
+# Exclure le fichier .env
+.env
+
+# Exclure les fichiers temporaires ou sensibles
+/vendor/
+/node_modules/
+/logs/
